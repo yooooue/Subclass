@@ -1,0 +1,8 @@
+_main
+-[AppDelegate window]
+-[AppDelegate setWindow:]
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[ViewController viewDidLoad]
+-[ViewController setTitleArr:]
+-[AppDelegate applicationDidBecomeActive:]
+-[ViewController touchesBegan:withEvent:]

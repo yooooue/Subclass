@@ -1,0 +1,6 @@
+module Pods_Subclass {
+  umbrella header "Pods-Subclass-umbrella.h"
+
+  export *
+  module * { export * }
+}

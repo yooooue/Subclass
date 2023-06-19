@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ljy-df-UrN">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyL-dy-74d">
+                        <rect key="frame" x="93" y="3" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="FJn-Tx-ftw"/>
+                            <constraint firstAttribute="height" constant="24" id="fb4-OS-tCF"/>
+                        </constraints>
+                        <state key="normal" image="未选中地址.png"/>
+                        <connections>
+                            <action selector="clickSelectBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="sYO-WJ-3MH"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK6-vr-Lvb">
+                        <rect key="frame" x="93" y="3" width="24" height="24"/>
+                        <color key="backgroundColor" red="1" green="0.2901960784" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Yti-8f-i8D"/>
+                            <constraint firstAttribute="width" constant="24" id="yKq-By-hAX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ljy-df-UrN" secondAttribute="trailing" id="2UY-Zp-azS"/>
+                <constraint firstAttribute="trailing" secondItem="gyL-dy-74d" secondAttribute="trailing" constant="3" id="2rw-jl-q8s"/>
+                <constraint firstAttribute="bottom" secondItem="ljy-df-UrN" secondAttribute="bottom" id="Ea5-T1-yNN"/>
+                <constraint firstItem="ljy-df-UrN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Swt-3n-Y5C"/>
+                <constraint firstItem="JK6-vr-Lvb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="Z8q-Hc-9ZZ"/>
+                <constraint firstItem="ljy-df-UrN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="im0-cW-KXW"/>
+                <constraint firstAttribute="trailing" secondItem="JK6-vr-Lvb" secondAttribute="trailing" constant="3" id="mR0-QE-iMk"/>
+                <constraint firstItem="gyL-dy-74d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="noL-kX-b4Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="120" height="120"/>
+            <connections>
+                <outlet property="photoImgView" destination="ljy-df-UrN" id="Zay-8S-YXn"/>
+                <outlet property="selectBtn" destination="gyL-dy-74d" id="U5t-jB-5gi"/>
+                <outlet property="selectNumLabel" destination="JK6-vr-Lvb" id="WIN-mL-rzx"/>
+            </connections>
+            <point key="canvasLocation" x="188.40579710144928" y="147.99107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="未选中地址.png" width="25" height="25"/>
+    </resources>
+</document>

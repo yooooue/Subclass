@@ -1,0 +1,17 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/TXLiteAVSDK_Player/TXLiteAVSDK_Player/SDK" "${PODS_ROOT}/TencentOpenAPI-Mirror/TencentOpenAPI"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/HXPhotoPicker" "${PODS_ROOT}/Headers/Public/JPush" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/WechatOpenSDK" ${PODS_ROOT}/TXLiteAVSDK_Player/TXLiteAVSDK_Player/SDK/TXLiteAVSDK_Player.framework/Headers/
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/HXPhotoPicker" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios" "${PODS_ROOT}/JCore" "${PODS_ROOT}/JPush" "${PODS_ROOT}/WechatOpenSDK/OpenSDK1.8.7.1"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.modulemap"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"HXPhotoPicker" -l"Masonry" -l"SDWebImage" -l"WeChatSDK" -l"c++" -l"iconv" -l"jcore-ios-2.3.4" -l"jpush-ios-3.3.4" -l"lottie-ios" -l"resolv" -l"sqlite3" -l"sqlite3.0" -l"stdc++" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "ImageIO" -framework "Photos" -framework "PhotosUI" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "TXLiteAVSDK_Player" -framework "TencentOpenAPI" -framework "UIKit" -framework "VideoToolbox" -framework "WebKit" -weak_framework "UserNotifications"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.modulemap"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios"
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
