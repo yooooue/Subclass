@@ -139,7 +139,7 @@ class HHCameraController: NSObject {
         if !captureSession.isRunning {
             DispatchQueue.global().async { [self] in
                 captureSession.startRunning()
-            }
+            }   
         }
     }
     
